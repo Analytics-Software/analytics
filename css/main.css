@@ -1,0 +1,219 @@
+/* ==========================================================================
+   Yoger Tovar
+   ========================================================================== */
+   
+   #navbar-title{
+      color: #fff;
+   }
+
+   .navbar>ul>li>a>span,
+   .navbar-username{
+      color:#fff;
+   }
+
+   .side-nav>li>a>h5{
+      color: #fff;
+      font-size: 16px;
+   }
+
+   .navbar>ul>li>a>span:hover,
+   .navbar-username:hover,
+   .side-nav>li:hover{
+      color: #fff;
+   }
+
+   #page-wrapper {
+    width: 100%;
+    padding: 0;
+    background-color: #fff;
+ }
+
+ @media(min-width:768px) {
+   body {
+      margin-top: 50px;
+   }
+   
+   .side-nav {
+      position: fixed;
+      top: 51px;
+      left: 225px;
+      width: 225px;
+      margin-left: -225px;
+      border: none;
+      border-radius: 0;
+      overflow-y: auto;
+      background-color: #222;
+      bottom: 0;
+      overflow-x: hidden;
+      padding-bottom: 40px;
+      transition: all .7s ease 0s;
+   }
+
+   .side-nav>li>a {
+      width: 225px;
+   }
+
+   #wrapper {
+      padding-left: 225px;
+   }
+
+}
+
+#wrapper.sidebar-close .side-nav{
+   left:50px;
+   transition: all .7s ease 0s;  
+}
+
+#wrapper.sidebar-close{
+   padding-left: 50px;
+}
+
+.side-nav>li>ul {
+   padding: 0;
+}
+
+.side-nav>li>ul>li>a {
+ display: block;
+ padding: 10px 15px 10px 38px;
+ text-decoration: none;
+ color: #white;
+}
+
+.side-nav>li>ul>li>a:hover {
+ color: #fff;
+}
+
+.side-nav li:before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ z-index: -1;
+ height: 100%;
+ width: 3px;
+ background-color: #1c1c1c;
+ -webkit-transition: width .2s ease-in;
+ -moz-transition:  width .2s ease-in;
+ -ms-transition:  width .2s ease-in;
+ transition: width .2s ease-in;
+
+}
+
+#wrapper.sidebar-close .side-nav li:before{
+   -webkit-transition: width .15s ease-in;
+   -moz-transition:  width .15s ease-in;
+   -ms-transition:  width .15s ease-in;
+   transition: width .15s ease-in;   
+}
+
+.side-nav li:first-child:before{
+   background-color: #ead24c;
+}
+.side-nav li:nth-child(2):before {
+ background-color: #ec1b5a;   
+}
+.side-nav li:nth-child(3):before {
+ background-color: #79aefe;   
+}
+.side-nav li:nth-child(4):before {
+ background-color: #314190;   
+}
+.side-nav li:nth-child(5):before {
+ background-color: #279636;   
+}
+.side-nav li:nth-child(6):before {
+ background-color: #7d5d81;   
+}
+.side-nav li:nth-child(7):before {
+ background-color: #35acdf;   
+}
+.side-nav li:nth-child(8):before {
+ background-color: #2d2366;   
+}
+.side-nav li:nth-child(9):before {
+ background-color: #ead24c;   
+}
+
+.side-nav li:hover:before,
+.side-nav li.open:hover:before {
+ width: 100%;
+ -webkit-transition: width .2s ease-in;
+ -moz-transition:  width .2s ease-in;
+ -ms-transition:  width .2s ease-in;
+ transition: width .2s ease-in;
+}
+
+.side-nav li a {
+ display: block;
+ color: #ddd;
+ text-decoration: none;
+ padding: 10px 15px 10px 30px;    
+}
+
+
+
+.top-nav {
+ padding: 0 15px;
+}
+
+.top-nav>li {
+ display: inline-block;
+ float: left;
+}
+
+.top-nav>li>a {
+ padding-top: 15px;
+ padding-bottom: 15px;
+ line-height: 20px;
+ color: #999;
+}
+
+.top-nav>li>a:hover,
+.top-nav>li>a:focus,
+.top-nav>.open>a,
+.top-nav>.open>a:hover,
+.top-nav>.open>a:focus {
+ color: #fff;
+ background-color: #000;
+}
+
+.top-nav>.open>.dropdown-menu {
+ float: left;
+ position: absolute;
+ margin-top: 0;
+ border: 1px solid rgba(0,0,0,.15);
+ border-top-left-radius: 0;
+ border-top-right-radius: 0;
+ background-color: #fff;
+ -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+ box-shadow: 0 6px 12px rgba(0,0,0,.175);
+}
+
+.top-nav>.open>.dropdown-menu>li>a {
+ white-space: normal;
+}
+
+ul.message-dropdown {
+ padding: 0;
+ max-height: 250px;
+ overflow-x: hidden;
+ overflow-y: auto;
+}
+
+li.message-preview {
+ width: 275px;
+ border-bottom: 1px solid rgba(0,0,0,.15);
+}
+
+li.message-preview>a {
+ padding-top: 15px;
+ padding-bottom: 15px;
+}
+
+li.message-footer {
+ margin: 5px 0;
+}
+
+ul.alert-dropdown {
+ width: 200px;
+}
