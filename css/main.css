@@ -217,3 +217,40 @@ li.message-footer {
 ul.alert-dropdown {
  width: 200px;
 }
+
+.panel-heading{
+   
+}
+
+.panel-icon{
+   font-size: 50px;
+}
+
+.panel-data{
+   text-align: right;
+   text-decoration: none;
+}
+
+.data-number{
+   font-size: 40px;
+}
+
+.youtube-icon,
+.icon-bubbles-panel{
+   color: red;
+}
+
+.icon-user-check-panel,
+.twitter-icon{
+   color: #35acdf;
+}
+
+.icon-shopping_cart-panel,
+.money-icon{
+   color: #ead24c; 
+}
+
+.icon-heart-panel,
+.facebook-icon{
+   color: #314190; 
+}
